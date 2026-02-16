@@ -90,22 +90,44 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
-  max-height: 120px;
+  max-height: 140px;
   overflow-y: auto;
 }
 
 .participant-item {
-  padding: 6px 0;
-  border-bottom: 1px dashed #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px dashed #f0f2f8;
   font-size: 14px;
-  color: #555;
+  color: #333;
 }
 
 .participant-item:last-child {
   border-bottom: none;
+}
+
+.participant-email {
+  color: #555;
+  word-break: break-all;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198,40,40,0.08);
 }
 
 .form-group {
